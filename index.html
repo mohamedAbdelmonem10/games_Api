@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <section class="games" id="games">
+      <header>
+        <img src="./images/wraper.png" alt="" class="w-100" />
+      </header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9 mx-auto rounded-4 navbar-dark"
+      >
+        <div class="container">
+          <h5 class="navbar-brand mb-0 text-uppercase text-white">
+            <img src="./images/logo-sm.png" alt="" style="max-width: 2.5rem" />
+            Game Reviews
+          </h5>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div
+            class="small collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+              <li class="nav-item">
+                <a
+                  role="button"
+                  id="mmorpg"
+                  class="nav-link active text-uppercase"
+                  aria-current="page"
+                  data-category="mmorpg"
+                  href="#"
+                  >mmorpg</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  id="shooter"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="shooter"
+                  href="#"
+                  >shooter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  id="sailing"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="sailing"
+                  href="#"
+                  >sailing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  id="permadeath"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="permadeath"
+                  href="#"
+                  >permadeath</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  id="superhero"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="superhero"
+                  href="#"
+                  >superhero</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  id="pixel"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="pixel"
+                  href="#"
+                  >pixel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="container my-5 home">
+        <section class="position-relative">
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4"
+            id="gameData"
+          >
+            <!-- <div class="col">
+              <div
+                class="card h-100 bg-transparent"
+                data-id="582"
+                role="button"
+              >
+                <div class="card-body p-0">
+                  <figure class="position-relative px-3 pt-3">
+                    <img
+                      src="./images/thumbnail.jpg"
+                      alt=""
+                      class="card-img-top object-fit-cover h-100"
+                    />
+                  </figure>
+                  <figcaption class="px-3">
+                    <div class="hstack justify-content-between">
+                      <h3 class="h6 small text-white">Tarisland</h3>
+                      <span class="badge text-bg-primary p-2">Free</span>
+                    </div>
+                    <p
+                      class="card-text small text-center opacity-50 text-white pb-3"
+                    >
+                      A,cross-platform,MMORPG,developed,by,Level,Infinite,and
+                    </p>
+                  </figcaption>
+                  <footer
+                    class="card-footer small hstack justify-content-between"
+                  >
+                    <span class="badge badge-color">MMORPG</span>
+                    <span class="badge badge-color">PC (Windows)</span>
+                  </footer>
+                </div>
+              </div>
+            </div> -->
+            
+        </section>
+      </main>
+    </section>
+
+    <section class="details d-none" id="details">
+      <div class="container">
+        <header class="hstack justify-content-between">
+          <h1 class="text-center h3 py-4 text-white">Details Game</h1>
+          <button class="btn-close btn-close-white" id="btnClose"></button>
+        </header>
+        <div class="row g-4" id="detailsContent">
+          <div class="col-md-4">
+            <img src="./images/thumbnail.jpg" alt="details" class="w-100" id="cover"/>
+          </div>
+          <div class="col-md-8 text-white">
+            <h3 id="title"></h3>
+            <p>
+              Category:
+              <span class="badge text-bg-info" id="MMORPG"></span>
+            </p>
+            <p>
+              Platform:
+              <span class="badge text-bg-info" id="platform"></span>
+            </p>
+            <p>
+              Status: 
+              <span class="badge text-bg-info" id="Status"></span>
+            </p>
+            <p class="small" id="description">
+              
+            </p>
+            <div id="link">
+              <a
+              href=""
+              class="btn btn-outline-warning text-white"
+              target="_blank"
+              >Show Game</a
+            </div>
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="loading d-none" id="loading">
+      <span class="loader"></span>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
